@@ -30,10 +30,18 @@ $this->params['breadcrumbs'][] = $this->title;
             'kode_barang',
             'nama_barang',
             'satuan',
-            'id_jenis',
+            //'id_jenis',
+            [
+                'attribute'=>'jenis',
+                'value'=>'jenis.nama_jenis',
+            ],
             //'id_supplier',
-            //'harga',
-            //'stok',
+            [
+                'attribute'=>'supplier',
+                'value'=>'supplier.nama_supplier',
+            ],
+            'harga',
+            'stok',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
